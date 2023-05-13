@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@color/colorAccent"/>
+
+    <item
+        android:top="400dp"
+        android:bottom="400dp"
+        android:start="100dp"
+        android:end="100dp">
+        <bitmap android:src="@drawable/ic_pup_logo_w"/>
+    </item>
+
+</layer-list>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:elevation="0dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sos_alerts"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="10dp"
+                    android:id="@+id/sos_no"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active_guards"
+                    android:textColor="#fff"
+                    android:textSize="28sp"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="28sp"
+                    android:id="@+id/active_guard_no"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:backgroundTint="#fff"
+            android:elevation="2dp"
+            android:background="@drawable/rounded_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:backgroundTint="#fff"
+                    android:background="@drawable/rounded_btn"
+                    android:id="@+id/guard_btn"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:src="@drawable/asset_guard"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:text="@string/guard"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:backgroundTint="#fff"
+                    android:background="@drawable/rounded_btn"
+                    android:id="@+id/user_btn"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:src="@drawable/asset_user"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:text="@string/user"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:backgroundTint="#fff"
+                    android:background="@drawable/rounded_btn"
+                    android:id="@+id/map_btn"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:src="@drawable/asset_map"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:text="@string/map"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:backgroundTint="#fff"
+                    android:background="@drawable/rounded_btn"
+                    android:id="@+id/sos_btn"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:src="@drawable/asset_sos"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:text="@string/sos"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:backgroundTint="#fff"
+                    android:background="@drawable/rounded_btn"
+                    android:id="@+id/admin_btn"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:src="@drawable/asset_admin"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:text="@string/admin"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:backgroundTint="#fff"
+                    android:background="@drawable/rounded_btn"
+                    android:id="@+id/history_btn"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:src="@drawable/asset_history"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:layout_gravity="center"
+                            android:text="@string/sos_history"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

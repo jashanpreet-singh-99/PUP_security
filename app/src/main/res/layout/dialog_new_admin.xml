@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/new_admin_dialog"
+    android:background="#66000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_margin="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/rounded_btn"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:elevation="15dp"
+            android:id="@+id/admin_image"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_btn"
+            android:src="@drawable/asset_user"
+            android:padding="5dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:textColor="@color/colorPrimaryText"
+            android:background="@drawable/rounded_border_btn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginEnd="50dp"
+            android:maxLines="1"
+            android:layout_marginStart="50dp"
+            android:textColorHint="@color/colorSecondaryText"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/dialog_admin_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_phone_number"
+            android:textColor="@color/colorPrimaryText"
+            android:background="@drawable/rounded_border_btn"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorSecondaryText"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/dialog_admin_contact"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_border_btn"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/save"
+            android:textColor="#fff"
+            android:elevation="16dp"
+            android:id="@+id/dialog_save_btn"
+            />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

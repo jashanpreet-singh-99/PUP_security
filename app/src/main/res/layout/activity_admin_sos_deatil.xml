@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/guard_list_selection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#99000000"
+        android:elevation="20dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/guard_list_view"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/oval_btn"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_add"
+            android:rotation="45"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/back_to_sos_list"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:layout_centerVertical="true"
+                android:background="@drawable/oval_btn"
+                android:src="@drawable/ic_arrow_back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOS Detail"
+                android:textSize="28sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:layout_margin="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:elevation="1dp"
+            android:background="@drawable/rounded_top"
+            android:backgroundTint="#fefefe">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="false"
+                android:layout_margin="20dp"
+                >
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:id="@+id/load_image"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:id="@+id/sos_image" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:clickable="false"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_91_7355565559"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="20sp"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:id="@+id/sos_contact"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_16_00_4_01_2019"
+                        android:padding="5dp"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="16sp"
+                        android:id="@+id/sos_name"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sos_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:text="Type 1."
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="NOTE : "
+                        android:textColor="@color/colorSecondaryText"/>
+
+                    <TextView
+                        android:id="@+id/extra_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="18sp"
+                        android:text="No Extra Message."
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorSecondaryText"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GUARD DEPLOYED"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textAlignment="center"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guard_deployed_view"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/location_sos_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/oval_btn"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="5dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/call_sos_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/oval_btn"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_call"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="5dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/add_guard_sos_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/oval_btn"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_add"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="5dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/complete_sos_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/oval_btn"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_done"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="5dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

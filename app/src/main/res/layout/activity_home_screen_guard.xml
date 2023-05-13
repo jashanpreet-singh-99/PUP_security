@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="@string/sos_alerts"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="24sp"/>
+
+        <ImageButton
+            android:id="@+id/log_out"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/oval_btn"
+            android:backgroundTint="@color/colorWhite"
+            android:elevation="5dp"
+            android:src="@drawable/ic_power"
+            android:layout_margin="10dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:layout_weight="9"
+        android:background="@drawable/rounded_top"
+        android:backgroundTint="#ffffff"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sos_list_view"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_object"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            app:lottie_speed="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:text="@string/no_alert"
+            android:layout_margin="20dp"
+            android:id="@+id/no_alert_txtView"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

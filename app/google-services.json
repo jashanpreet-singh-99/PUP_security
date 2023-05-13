@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "854790729487",
+    "firebase_url": "https://pup-security.firebaseio.com",
+    "project_id": "pup-security",
+    "storage_bucket": "pup-security.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854790729487:android:6d76b6ae0f576eb9ead87a",
+        "android_client_info": {
+          "package_name": "com.pup.pupsecurity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854790729487-819rt25e1ercon68f7vfdkv88de39q77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pup.pupsecurity",
+            "certificate_hash": "fe5cd4057d274d0d0769a6dfef6e4867c0992d52"
+          }
+        },
+        {
+          "client_id": "854790729487-79ohrk23quoids9n5e3nejmkasqa30jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdpJ2FeSuixqGQFY_lkVoewrhZgr08Gk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854790729487-79ohrk23quoids9n5e3nejmkasqa30jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

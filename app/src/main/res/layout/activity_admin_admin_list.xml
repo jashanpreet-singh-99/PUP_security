@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/admin_list"
+                android:textSize="28sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:elevation="1dp"
+                android:background="@drawable/rounded_top_40">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_add"
+                    android:elevation="3dp"
+                    android:id="@+id/add_new_admin"
+                    android:background="@drawable/oval_btn"
+                    android:backgroundTint="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:elevation="1dp"
+            android:background="@drawable/rounded_top"
+            android:backgroundTint="#fefefe">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/admin_list_view"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/dialog_new_admin" android:visibility="gone" />
+
+</RelativeLayout>
